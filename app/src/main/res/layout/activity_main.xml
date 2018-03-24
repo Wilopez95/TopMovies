@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.wilop.topmovies.MainActivity">
-
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
 
     <GridLayout
+        android:id="@+id/master"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <RelativeLayout
             android:id="@+id/Layout00"
-            android:layout_width="93dp"
+            android:layout_width="90dp"
             android:layout_height="150dp"
             android:layout_column="0"
             android:layout_row="0">
@@ -21,8 +20,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:tag="0"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:tag="0">
 
                 <ImageView
                     android:id="@+id/imageView0"
@@ -48,7 +47,7 @@
 
         <RelativeLayout
             android:id="@+id/Layout01"
-            android:layout_width="93dp"
+            android:layout_width="90dp"
             android:layout_height="150dp"
             android:layout_column="1"
             android:layout_row="0">
@@ -56,8 +55,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:tag="0"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:tag="1">
 
                 <ImageView
                     android:id="@+id/imageView1"
@@ -83,7 +82,7 @@
 
         <RelativeLayout
             android:id="@+id/Layout02"
-            android:layout_width="93dp"
+            android:layout_width="90dp"
             android:layout_height="150dp"
             android:layout_column="2"
             android:layout_row="0"
@@ -92,8 +91,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:tag="0"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:tag="2">
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -119,7 +118,7 @@
 
         <RelativeLayout
             android:id="@+id/Layout03"
-            android:layout_width="93dp"
+            android:layout_width="90dp"
             android:layout_height="150dp"
             android:layout_column="3"
             android:layout_row="0">
@@ -127,8 +126,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:tag="0"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:tag="3">
 
                 <ImageView
                     android:id="@+id/imageView3"
@@ -151,5 +150,572 @@
                     android:textAlignment="center" />
             </LinearLayout>
         </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layout10"
+            android:layout_width="90dp"
+            android:layout_height="150dp"
+            android:layout_column="0"
+            android:layout_row="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:tag="4">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/preview" />
+
+                <TextView
+                    android:id="@+id/textView4a"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView2"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/textView4b"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layout11"
+            android:layout_width="90dp"
+            android:layout_height="150dp"
+            android:layout_column="1"
+            android:layout_row="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:tag="5">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/preview" />
+
+                <TextView
+                    android:id="@+id/textView5a"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView2"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/textView5b"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layout12"
+            android:layout_width="90dp"
+            android:layout_height="150dp"
+            android:layout_column="2"
+            android:layout_row="1">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:tag="6">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/preview" />
+
+                <TextView
+                    android:id="@+id/textView6a"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView2"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/textView6b"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layout13"
+            android:layout_width="90dp"
+            android:layout_height="150dp"
+            android:layout_column="3"
+            android:layout_row="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:tag="7">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/preview" />
+
+                <TextView
+                    android:id="@+id/textView7a"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView2"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/textView7b"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layout20"
+            android:layout_width="90dp"
+            android:layout_height="150dp"
+            android:layout_column="0"
+            android:layout_row="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:tag="8">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/preview" />
+
+                <TextView
+                    android:id="@+id/textView8a"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView2"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/textView8b"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layout21"
+            android:layout_width="90dp"
+            android:layout_height="150dp"
+            android:layout_column="1"
+            android:layout_row="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:tag="9">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/preview" />
+
+                <TextView
+                    android:id="@+id/textView9a"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView2"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/textView9b"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layout22"
+            android:layout_width="90dp"
+            android:layout_height="150dp"
+            android:layout_column="2"
+            android:layout_row="2">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:tag="10">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/preview" />
+
+                <TextView
+                    android:id="@+id/textView10a"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView2"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/textView10b"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layout23"
+            android:layout_width="90dp"
+            android:layout_height="150dp"
+            android:layout_column="3"
+            android:layout_row="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:tag="11">
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/preview" />
+
+                <TextView
+                    android:id="@+id/textView11a"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView2"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/textView11b"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layout30"
+            android:layout_width="90dp"
+            android:layout_height="150dp"
+            android:layout_column="0"
+            android:layout_row="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:tag="12">
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/preview" />
+
+                <TextView
+                    android:id="@+id/textView12a"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView2"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/textView12b"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layout31"
+            android:layout_width="90dp"
+            android:layout_height="150dp"
+            android:layout_column="1"
+            android:layout_row="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:tag="13">
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/preview" />
+
+                <TextView
+                    android:id="@+id/textView13a"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView2"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/textView13b"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layout32"
+            android:layout_width="90dp"
+            android:layout_height="150dp"
+            android:layout_column="2"
+            android:layout_row="3">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:tag="14">
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/preview" />
+
+                <TextView
+                    android:id="@+id/textView14a"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView2"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/textView14b"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layout33"
+            android:layout_width="90dp"
+            android:layout_height="150dp"
+            android:layout_column="3"
+            android:layout_row="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:tag="15">
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/preview" />
+
+                <TextView
+                    android:id="@+id/textView15a"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView2"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/textView15b"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layout40"
+            android:layout_width="90dp"
+            android:layout_height="150dp"
+            android:layout_column="0"
+            android:layout_row="4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:tag="16">
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/preview" />
+
+                <TextView
+                    android:id="@+id/textView16a"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView2"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/textView16b"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layout41"
+            android:layout_width="90dp"
+            android:layout_height="150dp"
+            android:layout_column="1"
+            android:layout_row="4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:tag="17">
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/preview" />
+
+                <TextView
+                    android:id="@+id/textView17a"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView2"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/textView17b"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layout42"
+            android:layout_width="90dp"
+            android:layout_height="150dp"
+            android:layout_column="2"
+            android:layout_row="4">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:tag="18">
+
+                <ImageView
+                    android:id="@+id/imageView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/preview" />
+
+                <TextView
+                    android:id="@+id/textView18a"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView2"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/textView18b"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layout43"
+            android:layout_width="90dp"
+            android:layout_height="150dp"
+            android:layout_column="3"
+            android:layout_row="4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:tag="19">
+
+                <ImageView
+                    android:id="@+id/imageView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/preview" />
+
+                <TextView
+                    android:id="@+id/textView19a"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView2"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/textView19b"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </RelativeLayout>
     </GridLayout>
-</android.support.constraint.ConstraintLayout>
+
+
+
+</ScrollView>

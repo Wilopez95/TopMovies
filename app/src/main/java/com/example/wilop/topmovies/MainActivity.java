@@ -10,9 +10,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -72,8 +74,6 @@ public class MainActivity extends AppCompatActivity {
 
         getHTML();
 
-
-
     }
 
 
@@ -86,7 +86,6 @@ public class MainActivity extends AppCompatActivity {
                 .setCallback(new FutureCallback<String>() {
                     @Override
                     public void onCompleted(Exception e, String result) {
-                        Log.d("HTML",result);
                         HTMLParser(result);
                     }
                 });
@@ -117,14 +116,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void FullView(){
 
-        for (int i = 0 ; i<4;i++){
+        for (int i = 0 ; i<20;i++){
             int id = getResources().getIdentifier("textView"+i+"a", "id", getPackageName());
             int idb = getResources().getIdentifier("textView"+i+"b", "id", getPackageName());
             int idI = getResources().getIdentifier("imageView"+i, "id", getPackageName());
             TextView textView1 = findViewById(id);
             textView1.setText(NamesList.get(i));
             TextView textView2 = findViewById(idb);
-            textView2.setText(RatesList.get(i));
+            textView2.setText("Rate "+RatesList.get(i));
             //ImageView imageView = findViewById(idI);
             new DownloadImageTask((ImageView) findViewById(idI)).execute(RscList.get(i));
 
